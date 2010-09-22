@@ -62,7 +62,7 @@ session.screen0.allowRemoteActions:	false
 session.screen0.focusNewWindows:	true
 session.screen0.workspaceNames:	Workspace 1,Workspace 2,Workspace 3,Workspace 4,
 session.screen0.noFocusWhileTypingDelay:	0l
-session.screen0.rootCommand:	fbdetbg -a ~/.fluxbox/backgrounds/motivation-standard.jpg
+session.screen0.rootCommand:	fbdetbg -c ~/.fluxbox/backgrounds/motivation-standard.jpg
 session.screen0.maxIgnoreIncrement:	true
 session.screen0.showwindowposition:	true
 session.menuFile:	~/.fluxbox/menu

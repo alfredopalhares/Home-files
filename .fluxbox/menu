@@ -2,7 +2,7 @@
 [begin] (Menu)
 [encoding] {UTF-8}
 	[exec] 	(xterm) 	{xterm}
-	[exec]  (urxvt)		{urxvt]
+	[exec]  (urxvt)		{urxvt}
 
 [submenu] (Internet)
 	[exec] 	(Firefox) 	{firefox}

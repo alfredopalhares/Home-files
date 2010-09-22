@@ -11,6 +11,7 @@
   
 [submenu] (Tools)
 	[exec] (Vim)		{urxvt -e vim}
+	[exec] (Thunar) 	{thunar}
 	[exec] (Alsamixer)      {urxvt -e alsamixer}
 [end]
 

@@ -3,12 +3,13 @@
 # fluxbox startup-script:
 #
 # Lines starting with a '#' are ignored.
+# All apps need to have the "&" to stay in the background 
 
 # Change your keymap:
 xmodmap "/home/masterkorp/.Xmodmap"
 
 # Start the dropbox daemon
-dropboxd
+dropboxd & 
 
 
 

@@ -11,7 +11,8 @@ xmodmap "/home/masterkorp/.Xmodmap"
 # Start the dropbox daemon
 dropboxd & 
 
-
+# Start conky
+conky &
 
 
 exec fluxbox

@@ -13,6 +13,7 @@
 	[exec] (Vim)		{urxvt -e vim}
 	[exec] (Thunar) 	{thunar}
 	[exec] (Alsamixer)      {urxvt -e alsamixer}
+	[exec] (Htop)		{urxvt -e htop}
 [end]
 
 [endencoding]

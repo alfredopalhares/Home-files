@@ -68,7 +68,7 @@ session.screen0.showwindowposition:	true
 session.menuFile:	~/.fluxbox/menu
 session.appsFile:	~/.fluxbox/apps
 session.doubleClickInterval:	250
-session.styleFile:	~/.fluxbox/styles/DarkBlack
+session.styleFile:	~/.fluxbox/styles/antiX_black/
 session.keyFile:	~/.fluxbox/keys
 session.cacheLife:	5l
 session.autoRaiseDelay:	250

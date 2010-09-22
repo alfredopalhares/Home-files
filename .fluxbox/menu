@@ -1,0 +1,18 @@
+# My fluxbox menu
+[begin] (Menu)
+[encoding] {UTF-8}
+	[exec] 	(xterm) 	{xterm}
+	[exec]  (urxvt)		{urxvt]
+
+[submenu] (Internet)
+	[exec] 	(Firefox) 	{firefox}
+	[exec] 	(Irssi)		{urxvt -e irssi}
+[end]
+  
+[submenu] (Tools)
+	[exec] (Vim)		{urxvt -e vim}
+	[exec] (Alsamixer)      {urxvt -e alsamixer}
+[end]
+
+[endencoding]
+[end]

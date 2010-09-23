@@ -4,7 +4,8 @@ URxvt.background: black
 URxvt.foreground: green
 URxvt.cursorColor: yellow
 URxvt.underlineColor: green
-URxvt.font:xft:Bitstream Vera Sans Mono:pixelsize=12:antialias=true
+# Depends of the ttf-inconsolata package
+URxvt.font:xft:inconsolata:pixelsize=16:antialias=true
 
 !------------
 !True Transparency

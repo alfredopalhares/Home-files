@@ -1,0 +1,26 @@
+URxvt.geometry: 400x30 
+URxvt.buffered: true
+URxvt.background: black
+URxvt.foreground: green
+URxvt.cursorColor: yellow
+URxvt.underlineColor: green
+URxvt.font:xft:Bitstream Vera Sans Mono:pixelsize=12:antialias=true
+
+!------------
+!True Transparency
+!------------
+!set to 32-bit for real transparency (compositing required (see xcompmgr)
+urxvt*depth:             32
+!transparent=0000 opaque=ffff
+urxvt*background: rgba:1111/1111/1111/dddd
+!urxvt*background: rgba:1111/1111/1111/0000
+
+
+!------------------
+!False tranparency
+!------------------
+!URxvt.transparent: true
+!URxvt.shading: 50 
+
+Urxvt.secondaryScroll:  true    # Enable Shift-PageUp/Down in screen
+

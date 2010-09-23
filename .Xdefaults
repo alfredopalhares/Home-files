@@ -1,7 +1,7 @@
 URxvt.geometry: 400x30 
 URxvt.buffered: true
 URxvt.background: black
-URxvt.foreground: green
+URxvt.foreground: white
 URxvt.cursorColor: yellow
 URxvt.underlineColor: green
 # Depends of the ttf-inconsolata package

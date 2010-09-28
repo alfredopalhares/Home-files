@@ -8,6 +8,9 @@
 # Change your keymap:
 xmodmap "/home/masterkorp/.Xmodmap"
 
+# Apply urxvt to Xdb
+xrdb $HOME/.Xresources
+
 # Start the dropbox daemon
 dropboxd & 
 

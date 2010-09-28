@@ -26,10 +26,9 @@ urxvt*background: rgba:1111/1111/1111/dddd
 Urxvt.secondaryScroll:  true    # Enable Shift-PageUp/Down in screen
 
 # The tabs support
-URxvt.perl-ext-common:  default,tabbed
+URxvt.perl-ext-common:  default,tabbed, default, matcher
 
 # Make URL clickcable
-URxvt.perl-ext-common:  default,matcher
 URxvt.urlLauncher:      /usr/bin/firefox
 URxvt.matcher.button:   1 
 

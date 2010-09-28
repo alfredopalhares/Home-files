@@ -1,19 +1,20 @@
 # My fluxbox menu
 [begin] (Menu)
 [encoding] {UTF-8}
-	[exec] 	(xterm) 	{xterm}
-	[exec]  (urxvt)		{urxvt}
+	[exec] 	(xterm) 		{xterm}
+	[exec]  (urxvt)			{urxvt}	
 
 [submenu] (Internet)
-	[exec] 	(Firefox) 	{firefox}
-	[exec] 	(Irssi)		{urxvt -e irssi}
+	[exec] 	(Firefox) 		{firefox}
+	[exec] 	(Irssi)			{urxvt -e irssi}
 [end]
   
 [submenu] (Tools)
-	[exec] (Vim)		{urxvt -e vim}
-	[exec] (Thunar) 	{thunar}
-	[exec] (Alsamixer)      {urxvt -e alsamixer}
-	[exec] (Htop)		{urxvt -e htop}
+	[exec] (Vim)			{urxvt -e vim}
+	[exec] (Thunar) 		{thunar}
+	[exec] (Alsamixer)      	{urxvt -e alsamixer}
+	[exec] (Htop)			{urxvt -e htop}
+	[exec] (Apvlv PDF Viewer)	{apvlv}
 [end]
 
 [endencoding]

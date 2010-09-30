@@ -11,7 +11,7 @@
   
 [submenu] (Tools)
 	[exec] 	(Vim)				{urxvt -e vim}
-	[exec]	(Virtual Box)		{Virtual Box}
+	[exec]	(Virtual Box)		{VirtualBox}
 	[exec] 	(Thunar) 			{thunar}
 	[exec] 	(Htop)				{urxvt -e htop}
 	[exec] 	(Apvlv PDF Viewer)	{apvlv}
@@ -19,7 +19,6 @@
 
 [submenu] (Sound)
 	[exec] 	(Alsamixer)      	{urxvt -e alsamixer}
-	[exec]  (MPlayer)			{urxvt -e mplayer}
 [end]
 
 [endencoding]

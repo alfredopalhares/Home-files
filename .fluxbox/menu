@@ -17,7 +17,7 @@
 	[exec] 	(Apvlv PDF Viewer)	{apvlv}
 [end]
 
-[submenu] (Sound)
+[submenu] (Multimedia)
 	[exec] 	(Alsamixer)      	{urxvt -e alsamixer}
 [end]
 

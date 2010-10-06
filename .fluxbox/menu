@@ -19,6 +19,7 @@
 
 [submenu] (Multimedia)
 	[exec] 	(Alsamixer)      	{urxvt -e alsamixer}
+	[exec]	(Gimp)				{gimp}
 [end]
 
 [endencoding]

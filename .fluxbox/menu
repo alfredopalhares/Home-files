@@ -22,5 +22,9 @@
 	[exec]	(Gimp)				{gimp}
 [end]
 
+[submenu] (Games)
+	[exec]	(Minecraft)			{minecraft}
+[end]
+
 [endencoding]
 [end]

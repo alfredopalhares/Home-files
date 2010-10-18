@@ -23,7 +23,7 @@
 [end]
 
 [submenu] (Games)
-	[exec]	(Minecraft)			{minecraft}
+	[exec]	(Minecraft)			{sh ~/scripts/minecraft_git.sh}
 [end]
 
 [endencoding]

@@ -20,6 +20,7 @@
 [submenu] (Multimedia)
 	[exec] 	(Alsamixer)      	{urxvt -e alsamixer}
 	[exec]	(Gimp)				{gimp}
+	[exec]	(CDW)				{urvxt -e alsamixer}
 [end]
 
 [submenu] (Games)

@@ -20,7 +20,7 @@
 [submenu] (Multimedia)
 	[exec] 	(Alsamixer)      	{urxvt -e alsamixer}
 	[exec]	(Gimp)				{gimp}
-	[exec]	(CDW)				{urvxt -e alsamixer}
+	[exec]	(CDW Burner)		{urxvt -e cdw}
 	[exec]	(gUVCview)			{guvcview}
 [end]
 

@@ -7,7 +7,7 @@
 [submenu] (Internet)
 	[exec] 	(Firefox) 			{firefox}
 	[exec] 	(Irssi)				{urxvt -e irssi}
-	[exec] 	(Skype)				{skype}
+	[exec] 	(Skype)				{sh $HOME/scripts/skype.sh}
 [end]
   
 [submenu] (Tools)

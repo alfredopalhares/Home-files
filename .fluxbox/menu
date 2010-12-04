@@ -29,5 +29,9 @@
 	[exec]	(Minecraft)			{sh ~/scripts/minecraft_git.sh}
 [end]
 
+[submenu] (Miscellaneous)
+	[exec]	(CMatrix)			{urxvt -e cmatrix}
+[end]
+
 [endencoding]
 [end]

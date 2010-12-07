@@ -16,8 +16,12 @@ BASH_DIR='~/.bash.d'
 
 
 # Source the aliases file
-if [[ -f $BASHDIR/aliases.sh ]]; then
-	. $BASHDIR/aliases.sh
+if [[ -f $BASHDIR/aliases.bash ]]; then
+	. $BASHDIR/aliases.bash
 fi
 
+# Source the git completion file
+if [[ -f $BASHDIR/git_completion.bash ]]; then
+	. $BASHDIR/git_completion.bash
+fi
 

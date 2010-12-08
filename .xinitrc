@@ -1,7 +1,5 @@
-# Start the PolicyKit
-ck-launch-session
+# Start the PolicyKit with the fluxbox
+exec ck-launch-session startfluxbox
 
-# Start the fluxbox
-exec startfluxbox
 
 

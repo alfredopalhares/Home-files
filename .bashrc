@@ -12,7 +12,7 @@
 PS1='[\u@\h \W]\$ '
 
 #The bash files directory
-BASH_DIR='/home/masterkorp/.bash.d'
+BASH_DIR="$HOME/.bash.d"
 
 
 ######################

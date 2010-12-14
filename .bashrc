@@ -19,6 +19,11 @@ BASH_DIR="$HOME/.bash.d"
 #   Sourced files    #
 ######################
 
+# Source de enviroment vars
+if [[ -f $BASH_DIR/env_vars.bash ]]; then
+	source $BASH_DIR/env_vars.bash
+fi
+
 # Source the aliases file
 if [[ -f $BASH_DIR/aliases.bash ]]; then
 	. $BASH_DIR/aliases.bash

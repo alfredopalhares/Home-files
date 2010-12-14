@@ -8,8 +8,8 @@
 # 	 Vars	  #
 ###############
 
-# The bash colors, keep it simple in here
-PS1='[\u@\h \W]\$ '
+# The bash colors, keep it simple in here that show the repo and the current branch name 
+PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 
 #The bash files directory
 BASH_DIR="$HOME/.bash.d"

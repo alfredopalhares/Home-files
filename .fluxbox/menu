@@ -35,5 +35,10 @@
 	[exec]	(CMatrix)			{urxvt -e cmatrix}
 [end]
 
+[submenu] (Network)
+	[exec]	(IfTop)				{urxvt -e iftop}
+	[exec]  (Vnstat)			{urxvt -e vnstat}
+[end]
+
 [endencoding]
 [end]

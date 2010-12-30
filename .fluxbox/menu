@@ -16,6 +16,8 @@
 	[exec] 	(Thunar) 			{thunar}
 	[exec] 	(Htop)				{urxvt -e htop}
 	[exec] 	(Apvlv PDF Viewer)	{apvlv}
+	[exec] 	(Tmux)				{urxvt -e tmux}
+
 [end]
 
 [submenu] (Multimedia)

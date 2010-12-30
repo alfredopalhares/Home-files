@@ -4,7 +4,7 @@ URxvt.background: black
 URxvt.foreground: white
 URxvt.cursorColor: yellow
 URxvt.underlineColor: green
-# Depends of the ttf-inconsolata package
+! Depends of the ttf-inconsolata package
 URxvt.font:xft:inconsolata:pixelsize=16:antialias=true
 
 !------------
@@ -25,10 +25,11 @@ urxvt*background: rgba:1111/1111/1111/dddd
 
 Urxvt.secondaryScroll:  true    # Enable Shift-PageUp/Down in screen
 
-# The tabs support
-URxvt.perl-ext-common:  default,tabbed, default, matcher
+! Load the extensions
+! mactehr is for weblink click support
+URxvt.perl-ext-common:  default,matcher
 
-# Make URL clickcable
+! Make URL clickcable
 URxvt.urlLauncher:      /usr/bin/firefox
 URxvt.matcher.button:   1 
-
+URxvt.matcher.pattern.1: \\bwww\\.[\\w-]\\.[\\w./?&@#-]*[\\w/-] 

@@ -8,6 +8,7 @@
 	[exec] 	(Firefox) 			{firefox}
 	[exec] 	(Irssi)				{urxvt -e irssi}
 	[exec] 	(Skype)				{sh $HOME/scripts/skype.sh}
+	[exec] 	(Google Earth) 		{googleearth}
 [end]
   
 [submenu] (Tools)

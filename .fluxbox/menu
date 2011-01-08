@@ -13,6 +13,7 @@
   
 [submenu] (Tools)
 	[exec] 	(Vim)				{urxvt -e vim}
+	[exec]	(GVim)				{gvim}
 	[exec]	(Virtual Box)		{VirtualBox}
 	[exec] 	(Thunar) 			{thunar}
 	[exec] 	(Htop)				{urxvt -e htop}

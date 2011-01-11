@@ -17,7 +17,10 @@ dropboxd &
 # Start conky
 conky &
 
+# Start de xcreensaver 
+xscreensaver -no-splash &
 
+# Finnaly start fluxbox
 exec fluxbox
 # or if you want to keep a log:
 # exec fluxbox -log "/home/masterkorp/.fluxbox/log"

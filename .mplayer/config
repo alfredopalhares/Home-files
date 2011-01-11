@@ -1,0 +1,6 @@
+# Write your default config options here!
+
+# To stop xscreensaver form poping up 
+heartbeat-cmd="xscreensaver-command -deactivate >&- 2>&- &"
+
+

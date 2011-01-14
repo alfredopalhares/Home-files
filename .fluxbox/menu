@@ -9,6 +9,7 @@
 	[exec] 	(Irssi)				{urxvt -e irssi}
 	[exec] 	(Skype)				{sh $HOME/scripts/skype.sh}
 	[exec] 	(Google Earth) 		{googleearth}
+	[exec] 	(Transmission) 		{transmission-gtk}
 [end]
   
 [submenu] (Tools)

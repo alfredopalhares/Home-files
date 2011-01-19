@@ -28,6 +28,7 @@
 	[exec]	(Gimp)				{gimp}
 	[exec]	(CDW Burner)		{urxvt -e cdw}
 	[exec]	(gUVCview)			{guvcview}
+	[exec]  (InkScape)			{inkscape}
 [end]
 
 [submenu] (Games)

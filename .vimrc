@@ -1,8 +1,9 @@
-"Comentar estas linhas
+" Alfredo's vim file
 set nocompatible
+" Set the encoding to UTF-8
+set encoding=utf8
 filetype plugin indent on
 syntax on
-" Mostar o os plugins externos
 filetype plugin on
 
 
@@ -27,28 +28,21 @@ set incsearch
 set hlsearch
 
 
-"Mostar o número de linhas
+" Show the line numbers
 set number
 
-" Tornar o encoding a UTF-8
-set encoding=utf8
 
 
-" Modificações do addon NERDTree
-" Colocar o arranque automático
+" Settings for the NERDTree plugin
+" Add to the Start up 
 autocmd VimEnter * NERDTree
-" Para não ficar sempre a janela do NERDTree activa quando se inicia\
+" Cahnge tho editing windows 
 autocmd VimEnter * wincmd p
 
 
-" Correção do ficheiros SQL
-"TODO: Vefificar a causa disto
+" SQL files correctio 
+"TODO: Verify the cause 
 :let g:omni_sql_no_default_maps = 1
 
-
-" Activar as snippets de html para ficheiros html
-" autocmd BufREad, BufNewFile *.php set ft=php.html
-" Este também pordera funcionar
+" Active PHP snippets to *.html files 
 autocmd FileType php :let &ft.='.html'
-
-

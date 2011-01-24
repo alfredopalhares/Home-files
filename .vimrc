@@ -27,11 +27,8 @@ set incsearch
 " Higlight all search matches
 set hlsearch
 
-
 " Show the line numbers
 set number
-
-
 
 " Settings for the NERDTree plugin
 " Add to the Start up 
@@ -39,10 +36,12 @@ autocmd VimEnter * NERDTree
 " Cahnge tho editing windows 
 autocmd VimEnter * wincmd p
 
-
 " SQL files correctio 
 "TODO: Verify the cause 
 :let g:omni_sql_no_default_maps = 1
 
 " Active PHP snippets to *.html files 
 autocmd FileType php :let &ft.='.html'
+
+" Set the Nevrland-Darker colorsheme
+colorscheme neverland-darker

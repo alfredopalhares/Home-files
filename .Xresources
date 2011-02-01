@@ -11,9 +11,9 @@ URxvt.font:xft:inconsolata:pixelsize=16:antialias=true
 !True Transparency
 !------------
 !set to 32-bit for real transparency (compositing required (see xcompmgr)
-urxvt*depth:             32
+!urxvt*depth:             32
 !transparent=0000 opaque=ffff
-urxvt*background: rgba:1111/1111/1111/dddd
+!urxvt*background: rgba:1111/1111/1111/dddd
 !urxvt*background: rgba:1111/1111/1111/0000
 
 

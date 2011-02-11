@@ -10,6 +10,7 @@
 	[exec] 	(Skype)				{sh $HOME/scripts/skype.sh}
 	[exec] 	(Google Earth) 		{googleearth}
 	[exec] 	(Transmission) 		{transmission-gtk}
+	[exec] 	(Mumble) 			{mumble}
 [end]
   
 [submenu] (Tools)

@@ -45,5 +45,13 @@
 	[exec]  (Vnstat)			{urxvt -e vnstat}
 [end]
 
+# Add the function to shutdown using PolicyKit
+# This depends on consolekit package to work
+# More info on : https://wiki.archlinux.org/index.php/Allow_Users_to_Shutdown
+[submenu] (System)
+	[exec]	(Shutdown)			{dbus-send --system --print-reply --dest="org.freedesktop.ConsoleKit" /org/freedesktop/ConsoleKit/Manager org.freedesktop.ConsoleKit.Manager.Stop}
+	[exec]  (Restart)			{dbus-send --system --print-reply --dest="org.freedesktop.ConsoleKit" /org/freedesktop/ConsoleKit/Manager org.freedesktop.ConsoleKit.Manager.Restart}
+[end]
+
 [endencoding]
 [end]

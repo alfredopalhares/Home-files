@@ -22,6 +22,7 @@
 	[exec] 	(Apvlv PDF Viewer)	{apvlv}
 	[exec] 	(Tmux)				{urxvt -e tmux}
 	[exec]	(ArgoUML)			{argouml}
+	[exec]  (Vinagre)			{vinagre}
 [end]
 
 [submenu] (Multimedia)

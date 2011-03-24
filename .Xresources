@@ -7,22 +7,6 @@ URxvt.underlineColor: green
 ! Depends of the ttf-inconsolata package
 URxvt.font:xft:inconsolata:pixelsize=16:antialias=true
 
-!------------
-!True Transparency
-!------------
-!set to 32-bit for real transparency (compositing required (see xcompmgr)
-!urxvt*depth:             32
-!transparent=0000 opaque=ffff
-!urxvt*background: rgba:1111/1111/1111/dddd
-!urxvt*background: rgba:1111/1111/1111/0000
-
-
-!------------------
-!False tranparency
-!------------------
-!URxvt.transparent: true
-!URxvt.shading: 50 
-
 Urxvt.secondaryScroll:  true    # Enable Shift-PageUp/Down in screen
 
 ! Load the extensions

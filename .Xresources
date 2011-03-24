@@ -11,9 +11,13 @@ Urxvt.secondaryScroll:  true    # Enable Shift-PageUp/Down in screen
 
 ! Load the extensions
 ! macther is for weblink click support
-URxvt.perl-ext-common:  default,matcher
+! url-select is to enable yankable urls
+URxvt.perl-ext-common:  default,matcher, url-select
 
 ! Make URL clickcable
 URxvt.urlLauncher:      /usr/bin/firefox
 URxvt.matcher.button:   1 
 URxvt.matcher.pattern.1: \\bwww\\.[\\w-]\\.[\\w./?&@#-]*[\\w/-] 
+
+!url-select options
+URxvt.keysym.M-u:       perl:url-select:select_next

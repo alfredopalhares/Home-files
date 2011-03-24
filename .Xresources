@@ -26,7 +26,7 @@ URxvt.font:xft:inconsolata:pixelsize=16:antialias=true
 Urxvt.secondaryScroll:  true    # Enable Shift-PageUp/Down in screen
 
 ! Load the extensions
-! mactehr is for weblink click support
+! macther is for weblink click support
 URxvt.perl-ext-common:  default,matcher
 
 ! Make URL clickcable

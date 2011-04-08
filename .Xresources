@@ -7,10 +7,9 @@ URxvt.underlineColor: 						green
 ! Depends of the ttf-inconsolata package
 URxvt.font:xft:inconsolata:pixelsize=16:	antialias=true
 ! Enable Shift-PageUp/Down in screen
-Urxvt.secondaryScroll:  					true    
+URxvt.secondaryScroll:  					true    
 ! Disable the srollbar
-!URxvt*scrollbar: false
-Urxvt.scrollBar: 							false
+URxvt.scrollBar: 							false
 ! Load the extensions
 ! macther is for weblink click support
 ! url-select is to enable yankable urls

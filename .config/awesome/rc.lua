@@ -152,6 +152,20 @@ for s = 1, screen.count() do
 end
 -- }}}
 
+
+--Volume
+vol = 80
+
+
+function volume (mode)
+	if mode == "up" and vol < 99 then
+		vol = vol + 2
+	elseif mode == "down" and vol > 1 then
+		vol = vol - 2
+	end
+	io.popen("amixer sset \'Master Front\' "..vol.."%"):read("*all")
+end
+
 -- {{{ Mouse bindings
 root.buttons(awful.util.table.join(
     awful.button({ }, 3, function () mymainmenu:toggle() end),
@@ -215,8 +229,14 @@ globalkeys = awful.util.table.join(
                   mypromptbox[mouse.screen].widget,
                   awful.util.eval, nil,
                   awful.util.getdir("cache") .. "/history_eval")
-              end)
+              end),
+	
+	-- Sound keys
+	awful.key({}, "#123", function () volume("up") end),
+	awful.key({}, "#122", function () volume("down") end)
 )
+-- }}}
+
 
 clientkeys = awful.util.table.join(
     awful.key({ modkey,           }, "f",      function (c) c.fullscreen = not c.fullscreen  end),
@@ -332,4 +352,4 @@ end)
 
 client.add_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.add_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
--- }}}
+

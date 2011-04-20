@@ -43,5 +43,5 @@ autocmd VimEnter * wincmd p
 " Active PHP snippets to *.html files 
 autocmd FileType php :let &ft.='.html'
 
-" Set the Nevrland-Darker colorsheme
-colorscheme neverland-darker
+" Set the Nevrland2-Darker colorsheme
+colorscheme neverland2-darker

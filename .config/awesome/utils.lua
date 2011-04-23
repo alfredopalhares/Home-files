@@ -9,6 +9,11 @@ function loadsafe(name)
 	end
 end
 
+-- For easy debugging, text needs to be a string
+function dbg(text)
+	naughty.notify{text = text, timeout = 0}
+end
+
 -- Volume control function by percentage
 function volume (mode)
 	if mode == "up" and config.volume < 99 then

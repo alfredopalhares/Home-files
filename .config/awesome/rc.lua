@@ -43,6 +43,9 @@ layouts =
 }
 -- }}}
 
+-- Set the default volume
+vol = 20
+
 -- {{{ Tags
 -- Define a tag table which hold all screen tags.
 tags = {}
@@ -155,18 +158,6 @@ end
 -- }}}
 
 
---Volume
-vol = 80
-
-
-function volume (mode)
-	if mode == "up" and vol < 99 then
-		vol = vol + 2
-	elseif mode == "down" and vol > 1 then
-		vol = vol - 2
-	end
-	io.popen("amixer sset \'Master Front\' "..vol.."%"):read("*all")
-end
 
 -- {{{ Mouse bindings
 root.buttons(awful.util.table.join(

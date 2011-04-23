@@ -10,6 +10,11 @@ require("naughty")
 require("utils")
 
 -- {{{ Variable definitions
+-- Config table
+config = {}
+-- Volume
+config.volume = 20
+
 -- Themes define colours, icons, and wallpapers
 beautiful.init("/usr/share/awesome/themes/default/theme.lua")
 
@@ -42,9 +47,6 @@ layouts =
     awful.layout.suit.magnifier
 }
 -- }}}
-
--- Set the default volume
-vol = 20
 
 -- {{{ Tags
 -- Define a tag table which hold all screen tags.

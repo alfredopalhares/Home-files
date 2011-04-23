@@ -10,11 +10,11 @@ function loadsafe(name)
 end
 
 -- Volume control function by percentage
-function volume (mode, vol)
-	if mode == "up" and vol < 99 then
-		vol = vol + 2
-	elseif mode == "down" and vol > 1 then
-		vol = vol - 2
+function volume (mode)
+	if mode == "up" and config.volume < 99 then
+		config.volume = config.volume + 2
+	elseif mode == "down" and config.volume > 1 then
+		config.volume = config.volume - 2
 	end
 	io.popen("amixer sset 'Master Front' "..vol.."%"):read("*all")
 end

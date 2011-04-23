@@ -15,6 +15,9 @@ config = {}
 -- Volume
 config.volume = 20
 
+-- Load Keybindings
+loadsafe("keybindings")
+
 -- Themes define colours, icons, and wallpapers
 beautiful.init("/usr/share/awesome/themes/default/theme.lua")
 

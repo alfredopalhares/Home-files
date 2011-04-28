@@ -20,15 +20,18 @@ config.home = os.getenv("HOME").."/.config/awesome/"
 -- Themes define colours, icons, and wallpapers
 beautiful.init("/usr/share/awesome/themes/default/theme.lua")
 
--- Load Keybindings
-loadsafe("keybindings")
 -- Load client rules
 loadsafe("clients")
+loadsafe("keybindings")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "urxvt"
 editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
+
+-- Set keys
+root.keys(config.keys.global)
+root.buttons(config.keys.mouse)
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
 layouts =
@@ -200,13 +203,10 @@ for i = 1, keynumber do
 end
 
 clientbuttons = awful.util.table.join(
-    awful.button({ }, 1, function (c) client.focus = c; c:raise() end),
+awful.button({ }, 1, function (c) client.focus = c; c:raise() end),
     awful.button({ modkey }, 1, awful.mouse.client.move),
     awful.button({ modkey }, 3, awful.mouse.client.resize))
 
--- Set keys
-root.keys(globalkeys)
--- }}}
 
 
 -- {{{ Signals

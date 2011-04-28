@@ -19,9 +19,10 @@ config.clients.tilling = {
 		properties = {target = "float",  split = 224}},
       properties = { floating = true } },
     { rule = { class = "gimp" },
+	-- TODO: Fix this, the tags need to be setted before this code runs
     -- Set Firefox to always map on tags number 2 of screen 1.
-    { rule = { class = "Firefox" },
-      properties = { tag = tags[1][2] } }
+	--    { rule = { class = "Firefox" },
+    --		  properties = { tag = tags[1][2] } }
 }
 
 

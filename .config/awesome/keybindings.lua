@@ -63,6 +63,7 @@ config.keys.global = awful.util.table.join(
               end),
 	
 	-- Sound keys
+	-- TODO: Add the sound mute key
 	awful.key({}, "#123", function () volume("up") end),
 	awful.key({}, "#122", function () volume("down") end)
 )

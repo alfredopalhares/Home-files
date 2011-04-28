@@ -17,13 +17,13 @@ config.volume = 20
 -- Home dir
 config.home = os.getenv("HOME").."/.config/awesome/"
 
+-- Themes define colours, icons, and wallpapers
+beautiful.init("/usr/share/awesome/themes/default/theme.lua")
+
 -- Load Keybindings
 loadsafe("keybindings")
 -- Load client rules
 loadsafe("clients")
-
--- Themes define colours, icons, and wallpapers
-beautiful.init("/usr/share/awesome/themes/default/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "urxvt"

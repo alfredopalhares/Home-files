@@ -14,6 +14,8 @@ require("utils")
 config = {}
 -- Volume
 config.volume = 20
+-- Home dir
+config.home = os.getenv("HOME")..".config/awesome/"
 
 -- Load Keybindings
 loadsafe("keybindings")

@@ -6,7 +6,7 @@ config.keys = {}
 
 
 -- Key bindings
-config.keys.global = (awful.util.table.join(
+config.keys.global = awful.util.table.join(
     awful.key({ modkey,           }, "Left",   awful.tag.viewprev       ),
     awful.key({ modkey,           }, "Right",  awful.tag.viewnext       ),
     awful.key({ modkey,           }, "Escape", awful.tag.history.restore),
@@ -82,13 +82,12 @@ config.keys.client= awful.util.table.join(
             c.maximized_horizontal = not c.maximized_horizontal
             c.maximized_vertical   = not c.maximized_vertical
         end)
-))
+)
 
 
 -- Mouse bindings
-config.keys.mouse = (awful.util.table.join(
+config.keys.mouse = awful.util.table.join(
     awful.button({ }, 3, function () mymainmenu:toggle() end),
     awful.button({ }, 4, awful.tag.viewnext),
     awful.button({ }, 5, awful.tag.viewprev)
-))
-
+)

@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/masterkorp/.mplayer'
+let g:netrw_dirhist_2='/home/masterkorp/.fluxbox'
+let g:netrw_dirhist_3='/home/masterkorp/.irssi'
+let g:netrw_dirhist_4='/etc/php'
+let g:netrw_dirhist_5='/home/masterkorp/.calcurse'
+let g:netrw_dirhist_6='/home/masterkorp/Public'

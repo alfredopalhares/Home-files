@@ -6,11 +6,11 @@ filetype plugin indent on
 syntax on
 filetype plugin on
 
-
+" Tab spacing
 set noexpandtab
 set shiftwidth  =4
-set softtabstop =0
-set tabstop     =4
+set softtabstop =4
+set tabstop     =8
 
 set hidden
 set autoindent

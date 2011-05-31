@@ -1,52 +1,42 @@
--- Standard awesome library
+-- Global modules
 require("awful")
-require("awful.autofocus")
-require("awful.rules")
--- Theme handling library
 require("beautiful")
--- Notification library
 require("naughty")
--- Utlits library
-require("utils")
+require("awful.startup_notification")
 
--- {{{ Variable definitions
--- Config table
+-- Local configuration
 config = {}
--- Volume
-config.volume = 20
--- Home dir
-config.home = os.getenv("HOME").."/.config/awesome/"
+-- Base directory
+config.home = os.getenv("HOME") .. "/.config/awesome/"
+-- Statusbar height
+config.statusbar_height = 16
+-- Tint of the selected tag, hex
+config.tag_tint = "50"
+-- Default floating windows gravity
+config.gravity = {x = "center", y = "bottom"}
 
--- Themes define colours, icons, and wallpapers
-beautiful.init("/usr/share/awesome/themes/default/theme.lua")
+-- Custom theme
+beautiful.init(config.home .. "cfg-theme.lua")
+awful.startup_notification.cursor_waiting = "left_ptr"
 
--- Load client rules
-loadsafe("clients")
-loadsafe("keybindings")
+-- Support functions
+require("tools")
+-- Key bindings
+loadsafe("cfg-keys")
+-- Clients requiring special treatment
+loadsafe("cfg-clients")
+-- Special layout for small screen
+loadsafe("mod-smallscreen")
+-- Floating statusbar
+loadsafe("mod-statusbar")
+-- Key mapper
+loadsafe("mod-keymapper")
 
--- Set keys
+-- Global key bindings
 root.keys(config.keys.global)
-root.buttons(config.keys.mouse)
 
-
--- This is used later as the default terminal and editor to run.
-terminal = "urxvt"
-editor = os.getenv("EDITOR") or "vim"
-editor_cmd = terminal .. " -e " .. editor
-
--- Table of layouts to cover with awful.layout.inc, order matters.
-layouts =
-{
-    awful.layout.suit.tile,
-    awful.layout.suit.tile.left,
-    awful.layout.suit.tile.bottom,
-    awful.layout.suit.tile.top,
-    awful.layout.suit.floating,
-    awful.layout.suit.fair,
-    awful.layout.suit.fair.horizontal,
-    awful.layout.suit.spiral,
-    awful.layout.suit.spiral.dwindle,
-    awful.layout.suit.max,
-    awful.layout.suit.max.fullscreen,
-    awful.layout.suit.magnifier
-}
+-- NEXT STEPS
+-- wait for Gimp 2.8 release, test single window mode (everything else depends on this)
+-- write Pidgin plugin for single window mode (possibility checked with developers)
+-- get rid of tags management, all windows go to single tag
+-- turn on composition to avoid redraws when switching windows

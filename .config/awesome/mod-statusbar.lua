@@ -39,34 +39,37 @@ end
 
 -- Update battery status
 local function update_battery()
-	local cap, chg, cur = 0, 0, 0
-	for i = 0, 2 do
-		local basedir = "/sys/class/power_supply/BAT" .. tostring(i) .. "/"
-		if awful.util.file_readable(basedir .. "charge_full") then
-			cap = cap + tonumber(file_read(basedir .. "charge_full"))
-			chg = chg + tonumber(file_read(basedir .. "charge_now"))
-			cur = cur + tonumber(file_read(basedir .. "current_now"))
-		end
+    local cap, chg, cur = 0, 0, 0
+    for i = 0, 2 do
+	local basedir = "/sys/class/power_supply/BAT" .. tostring(i) .. "/"
+	if awful.util.file_readable(basedir .. "charge_full") then
+	    cap = cap + tonumber(file_read(basedir .. "charge_full"))
+	    chg = chg + tonumber(file_read(basedir .. "charge_now"))
+	    cur = cur + tonumber(file_read(basedir .. "current_now"))
 	end
-	local state = ""
-	local tooltip = "<b>Battery state</b>: Charging\n"
-	if tonumber(file_read("/sys/class/power_supply/AC/online")) == 0 then
-		local level = chg/cur
-		local minutes = tostring(math.floor((level - math.floor(level))*60))
-		if #minutes == 1 then
-			minutes = "0" .. minutes
-		end
-		state = tostring(math.floor(level)) .. ":" .. minutes
-		local tooltip = "<b>Battery state</b>: Disharging\n"
-	else
+    end
+    local state = ""
+    local tooltip = "<b>Battery state</b>: Charging\n"
+    -- FIXME
+    for i = 0, 2 do
+	local acstatus ="/sys/class/power_supply/AC".. tostring(i).. "/online"
+	if awful.util.file_readable(acstatus) and tonumber(file_read(acstatus)) == 0 then
+	    local level = chg/cur
+	    local minutes = tostring(math.floor((level - math.floor(level))*60))
+	    if #minutes == 1 then
+		minutes = "0" .. minutes
+	    end
+	    state = tostring(math.floor(level)) .. ":" .. minutes
+	    local tooltip = "<b>Battery state</b>: Disharging\n"
+	    else
 		state = tostring(math.floor(100*chg/cap)) .. "%"
-	end
-	widgets.battery_text.text = " " .. state .. "  "
-	widgets.battery_tooltip:set_text(tooltip .. "<b>Battery level</b>: " .. tostring(math.floor(100*chg/cap)) .. "%")
-	local i = 1.5 + (chg/cap*#widgets.battery_icons*(#widgets.battery_icons - 2) + 0.5)/(#widgets.battery_icons - 1)
-	widgets.battery_icon.image = widgets.battery_icons[math.floor(i)]
+	    end
+	    widgets.battery_text.text = " " .. state .. "  "
+	    widgets.battery_tooltip:set_text(tooltip .. "<b>Battery level</b>: " .. tostring(math.floor(100*chg/cap)) .. "%")
+	    local i = 1.5 + (chg/cap*#widgets.battery_icons*(#widgets.battery_icons - 2) + 0.5)/(#widgets.battery_icons - 1)
+	    widgets.battery_icon.image = widgets.battery_icons[math.floor(i)]
+    end
 end
-
 
 --
 -- Separator

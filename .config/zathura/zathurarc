@@ -1,0 +1,4 @@
+# Set the dark theme
+set recolor true
+set recolor_darkcolor #82797B
+set recolor_lightcolor #000000

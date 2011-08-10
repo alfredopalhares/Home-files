@@ -36,7 +36,7 @@ autocmd VimEnter * NERDTree
 " Cahnge tho editing windows 
 autocmd VimEnter * wincmd p
 
-" SQL files correctio 
+" SQL files correction
 "TODO: Verify the cause 
 :let g:omni_sql_no_default_maps = 1
 

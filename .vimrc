@@ -45,3 +45,8 @@ autocmd FileType php :let &ft.='.html'
 
 " Set the Nevrland2-Darker colorsheme
 colorscheme neverland2-darker
+
+" Autoload Ctags on the current dir
+au BufWritePost .c,.cpp,*.h, *.rb silent! !ctags -R &
+" C
+" "

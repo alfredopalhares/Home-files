@@ -33,7 +33,7 @@ set number
 " Settings for the NERDTree plugin
 " Add to the Start up 
 autocmd VimEnter * NERDTree
-" Cahnge tho editing windows 
+" Change tho editing windows 
 autocmd VimEnter * wincmd p
 
 " SQL files correction

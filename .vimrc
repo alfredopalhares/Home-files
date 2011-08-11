@@ -30,18 +30,22 @@ set hlsearch
 " Show the line numbers
 set number
 
-" Settings for the NERDTree plugin
-" Add to the Start up 
-autocmd VimEnter * NERDTree
-" Change tho editing windows 
-autocmd VimEnter * wincmd p
-
-" SQL files correction
-"TODO: Verify the cause 
-:let g:omni_sql_no_default_maps = 1
-
-" Active PHP snippets to *.html files 
-autocmd FileType php :let &ft.='.html'
-
 " Set the Nevrland2-Darker colorsheme
 colorscheme neverland2-darker
+
+" Start all "IDE" tools
+function Ide()
+    " Settings for the NERDTree plugin
+    " Add to the Start up 
+    NERDTree
+    " Change tho editing windows 
+    wincmd p
+
+    " SQL files correction
+    "TODO: Verify the cause 
+    :let g:omni_sql_no_default_maps = 1
+
+    " Enable Tagbar
+    TagbarToggle
+endfunction
+

@@ -49,3 +49,5 @@ function Ide()
     TagbarToggle
 endfunction
 
+" Map Ide to F9
+nmap <F9> :call Ide() <cr>

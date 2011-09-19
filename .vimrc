@@ -7,10 +7,10 @@ syntax on
 filetype plugin on
 
 " Tab spacing
-set noexpandtab
-set shiftwidth  =4
-set softtabstop =4
-set tabstop     =8
+set tabstop=2
+set shiftwidth=2
+set expandtab
+
 
 set hidden
 set autoindent

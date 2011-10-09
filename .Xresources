@@ -16,7 +16,7 @@ URxvt.scrollBar: 	false
 URxvt.perl-ext:	default,url-select
 URxvt.perl-ext-common:	default,matcher
 ! Make URL clickcable
-URxvt.urlLauncher: /usr/bin/firefox
+URxvt.urlLauncher: /usr/bin/luakit
 URxvt.matcher.button:	1 
 URxvt.matcher.pattern.1:	\\bwww\\.[\\w-]\\.[\\w./?&@#-]*[\\w/-] 
 !url-select options

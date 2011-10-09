@@ -1,24 +1,24 @@
-URxvt.geometry: 							400x30 
-URxvt.buffered: 							true
-URxvt.background: 							black
-URxvt.foreground: 							white
-URxvt.cursorColor: 							yellow
-URxvt.underlineColor: 						green
+URxvt.geometry: 400x30 
+URxvt.buffered:	true
+URxvt.background:	black
+URxvt.foreground:	white
+URxvt.cursorColor: yellow
+URxvt.underlineColor:	green
 ! Depends of the ttf-inconsolata package
 URxvt.font:xft:inconsolata:pixelsize=16:	antialias=true
 ! Enable Shift-PageUp/Down in screen
-URxvt.secondaryScroll:  					true    
+URxvt.secondaryScroll: true    
 ! Disable the srollbar
-URxvt.scrollBar: 							false
+URxvt.scrollBar: 	false
 ! Load the extensions
 ! macther is for weblink click support
 ! url-select is to enable yankable urls
-URxvt.perl-ext:      						default,url-select
-URxvt.perl-ext-common:  					default,matcher
+URxvt.perl-ext:	default,url-select
+URxvt.perl-ext-common:	default,matcher
 ! Make URL clickcable
-URxvt.urlLauncher:      					/usr/bin/firefox
-URxvt.matcher.button:   					1 
-URxvt.matcher.pattern.1: 					\\bwww\\.[\\w-]\\.[\\w./?&@#-]*[\\w/-] 
+URxvt.urlLauncher: /usr/bin/firefox
+URxvt.matcher.button:	1 
+URxvt.matcher.pattern.1:	\\bwww\\.[\\w-]\\.[\\w./?&@#-]*[\\w/-] 
 !url-select options
-URxvt.keysym.M-u:       					perl:url-select:select_next
-URxvt.underlineURLs: 						true
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.underlineURLs: true

@@ -1,5 +1,5 @@
-# Start the PolicyKit with the fluxbox
-exec ck-launch-session startfluxbox
+# Start the PolicyKit with the awesome 
+exec ck-launch-session awesome
 
 
 

@@ -12,7 +12,7 @@ alias gc='git commit'
 alias ga='git add'
 alias gls='git ls-files'
 alias glg='git log'
-alias glgpretty='git log --pretty=format:'%h : %s' --graph'
+alias glgpretty="git log --pretty=format:'%h : %s' --date-order --graph"
 alias gp='git push'
 alias gpl='git pull'
 

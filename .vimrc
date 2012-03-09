@@ -30,9 +30,6 @@ set hlsearch
 " Show the line numbers
 set number
 
-" Set the Nevrland2-Darker colorsheme
-colorscheme neverland2-darker
-
 " Start all "IDE" tools
 function Ide()
     " Settings for the NERDTree plugin

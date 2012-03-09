@@ -1,0 +1,16 @@
+--- 
+- !masanjin.net,2006-10-01/Redwood/Maildir 
+  uri: maildir:/home/masterkorp/Mail
+  cur_offset: 13300946630028635
+  usual: true
+  archived: false
+  id: 1
+  labels: []
+
+  mtimes: 
+    cur: 2011-11-10 18:25:56 +01:00
+    new: 2012-02-24 15:44:23 +01:00
+- !masanjin.net,2006-10-01/Redwood/DraftLoader 
+  cur_offset: 0
+- !masanjin.net,2006-10-01/Redwood/SentLoader 
+  cur_offset: 3256799

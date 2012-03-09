@@ -1,0 +1,10 @@
+arch-general
+arch-projects
+awesomewm
+doxygen-users
+exherbo
+kernelnewbies
+lua
+paparazzi-devel
+sup-talk
+texhax

@@ -1,0 +1,24 @@
+--- 
+:jump_to_open_message: true
+:ask_for_cc: true
+:sent_source: sup://sent
+:discard_snippets_from_encrypted_messages: false
+:accounts: 
+  :default: 
+    :signature: /home/masterkorp/.signature
+    :sendmail: /usr/sbin/sendmail -oem -ti
+    :email: masterkorp@masterkorp.net
+    :name: Alfredo Palhares
+    :alternates: []
+
+:ask_for_bcc: false
+:editor: vim
+:default_attachment_save_dir: ""
+:ask_for_subject: true
+:thread_by_subject: false
+:poll_interval: 300
+:confirm_no_attachments: true
+:edit_signature: false
+:wrap_width: 0
+:confirm_top_posting: true
+:ask_for_to: true

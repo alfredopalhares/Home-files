@@ -25,6 +25,9 @@ case message.subj
   # Latex
   when /\[texhax\]/i
     message.add_label "texhax"
+  # Freeswitch-dev
+  when /\[freeswitch-dev\]/i
+    message.add_label "freeswitch-dev"
 end 
 
 # By recipient 

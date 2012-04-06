@@ -13,6 +13,9 @@ case message.subj
   # Arch projects
   when /\[arch-projects\]/i
     message.add_label "arch-projects"
+  # AUR general
+  when /\[aur-general\]/i
+    message.add_label "aur-general"
   # Exherbor 
   when /\[exherbo-dev\]/i
     message.add_label "exherbo"

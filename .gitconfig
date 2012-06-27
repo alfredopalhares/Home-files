@@ -5,3 +5,7 @@
 	ui = true
 [github]
 	user = masterkorp
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false

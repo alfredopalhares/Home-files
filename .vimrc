@@ -51,3 +51,7 @@ endfunction
 
 " Map Ide to F9
 nmap <F9> :call Ide() <cr>
+
+" Higlight trailing whitespaces
+highlight RedundantSpaces ctermbg=red guibg=red
+match RedundantSpaces /\s\+$/

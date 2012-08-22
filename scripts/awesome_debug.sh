@@ -46,13 +46,13 @@ USAGE
 
 function awesome_pid() 
 {
-  /bin/pidof awesome | cut -d\  -f1
+  pidof awesome | cut -d\  -f1
 }
  
 function xephyr_pid()
 
 {
-  /bin/pidof Xephyr | cut -d\  -f1
+  pidof Xephyr | cut -d\  -f1
 }
 
 [ $# -lt 1 ] && usage

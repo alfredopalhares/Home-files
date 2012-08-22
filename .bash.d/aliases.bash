@@ -24,3 +24,9 @@ alias ck_hibernate='dbus-send --system --print-reply --dest="org.freedesktop.UPo
 
 # Minecraft alias to use the ssh tunnel at port 9999
 alias minecraft_socks='java -Xmx1024M -Xms512M -DsocksProxyHost=127.0.0.1 -DsocksProxyPort=9999 -cp     /usr/share/minecraft/minecraft.jar net.minecraft.LauncherFrame'
+
+# Set sane defaults for youtube-dl
+alias youtube-dl='youtube-dl -ct --max-quality=22'
+
+# Quilt for debian packaging
+alias dquilt='quilt --quiltrc=${HOME}/.quiltrc-dpkg'

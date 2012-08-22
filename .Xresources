@@ -1,5 +1,6 @@
 URxvt.geometry: 400x30 
 URxvt.buffered:	true
+URxvt*termName: xterm
 URxvt.background:	black
 URxvt.foreground:	white
 URxvt.cursorColor: yellow

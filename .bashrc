@@ -1,4 +1,4 @@
-# BashRC 
+# BashRC
 # User specific shell enviroment
 
 # Check for an interactive session
@@ -8,7 +8,7 @@
 # 	 Vars	  #
 ###############
 
-# The bash colors, keep it simple in here that show the repo and the current branch name 
+# The bash colors, keep it simple in here that show the repo and the current branch name
 PS1='\[\e[0;32m\]\u\[\e[m\] \[\e[1;34m\]\W\[\e[0;31m\]$(__git_ps1 " (%s)")\[\e[m\]\[\e[m\] \[\e[1;32m\]\$\[\e[m\] '
 
 #The bash files directory
@@ -22,6 +22,11 @@ BASH_DIR="$HOME/.bash.d"
 # Source de enviroment vars
 if [[ -f $BASH_DIR/env_vars.bash ]]; then
 	source $BASH_DIR/env_vars.bash
+fi
+
+# Source the secret keys
+if [[ -f $BASH_DIR/secrets.bash ]]; then
+	source $BASH_DIR/secrets.bash
 fi
 
 # Source the aliases file
@@ -39,3 +44,7 @@ if [[ -f $BASH_DIR/udisks_functions.bash ]]; then
 	. $BASH_DIR/udisks_functions.bash
 fi
 
+# Source SSH Agent script
+if [[ -f $BASH_DIR/ssh_agent.bash ]]; then
+	. $BASH_DIR/ssh_agent.bash
+fi

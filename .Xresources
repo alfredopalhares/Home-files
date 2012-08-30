@@ -1,4 +1,4 @@
-URxvt.geometry: 400x30 
+URxvt.geometry: 400x30
 URxvt.buffered:	true
 URxvt*termName: screen-256color
 URxvt.background:	black
@@ -8,18 +8,19 @@ URxvt.underlineColor:	green
 ! Depends of the ttf-inconsolata package
 URxvt.font:xft:inconsolata:pixelsize=16:	antialias=false
 ! Enable Shift-PageUp/Down in screen
-URxvt.secondaryScroll: true    
+URxvt.secondaryScroll: true
 ! Disable the srollbar
-URxvt.scrollBar: 	false
+URxvt.scrollBar: false
 ! Load the extensions
 ! macther is for weblink click support
 ! url-select is to enable yankable urls
-URxvt.perl-ext:	default,url-select
-URxvt.perl-ext-common:	default,matcher
-! Make URL clickcable
-URxvt.urlLauncher: /usr/bin/luakit
-URxvt.matcher.button:	1 
-URxvt.matcher.pattern.1:	\\bwww\\.[\\w-]\\.[\\w./?&@#-]*[\\w/-] 
-!url-select options
+URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
+!urxvt-perls options
+!Url-select
+URvxt.url-select.button: 1
+URxvt.url-select.launcher: /usr/bin/luakit
+URxvt.url-select.underline: true
 URxvt.keysym.M-u: perl:url-select:select_next
-URxvt.underlineURLs: true
+! Keyboard select stuff
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
